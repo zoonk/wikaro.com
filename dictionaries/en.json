@@ -1,6 +1,13 @@
 {
+  "header": {
+    "demo": "Live demo"
+  },
   "home": {
-    "title": "Test title"
+    "hero": {
+      "featured": "Interactive learning",
+      "title": "for your business",
+      "subtitle": "Create interactive guides to engage your employees and attract new customers. It’s easier, faster and cheaper than making video lessons."
+    }
   },
   "metadata": {
     "home": {

@@ -1,4 +1,4 @@
-import { Locale } from "@/types";
+import { LanguageParams } from "@/types";
 import type { Metadata, Viewport } from "next";
 import colors from "tailwindcss/colors";
 
@@ -7,7 +7,7 @@ import Header from "@/components/Header";
 
 type RootLayoutProps = {
   children: React.ReactNode;
-  params: Locale;
+  params: LanguageParams;
 };
 
 export const viewport: Viewport = {
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://wikaro.com"),
 };
 
-export async function generateStaticParams(): Promise<Locale[]> {
+export async function generateStaticParams(): Promise<LanguageParams[]> {
   return [{ lang: "en" }, { lang: "pt" }];
 }
 
@@ -32,7 +32,7 @@ export default function RootLayout({ children, params }: RootLayoutProps) {
       className="h-full scroll-smooth bg-white antialiased"
     >
       <body className="mx-auto max-w-7xl p-4 sm:p-6 lg:p-8">
-        <Header />
+        <Header locale={params.lang} />
         {children}
       </body>
     </html>

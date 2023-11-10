@@ -1,11 +1,18 @@
 import Image from "next/image";
 import Link from "next/link";
-
 import logo from "@/images/logo.svg";
 import icon from "@/images/icon.svg";
 import { Button } from "./Button";
+import type { Locale } from "@/types";
+import { getDictionary } from "@/dictionaries";
 
-export default function Header() {
+interface HeaderProps {
+  locale: Locale;
+}
+
+export default async function Header({ locale }: HeaderProps) {
+  const t = await getDictionary(locale);
+
   return (
     <header className="flex justify-between gap-4">
       <Link href="/" aria-label="Home">
@@ -29,7 +36,7 @@ export default function Header() {
       </Link>
 
       <Button href="https://app.uneebee.com" prefetch={false} color="blue">
-        Live demo
+        {t.header.demo}
       </Button>
     </header>
   );
