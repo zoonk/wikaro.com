@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from "next";
 import colors from "tailwindcss/colors";
 
 import "../globals.css";
+import Header from "@/components/Header";
 
 type RootLayoutProps = {
   children: React.ReactNode;
@@ -26,8 +27,14 @@ export async function generateStaticParams(): Promise<Locale[]> {
 
 export default function RootLayout({ children, params }: RootLayoutProps) {
   return (
-    <html lang={params.lang}>
-      <body>{children}</body>
+    <html
+      lang={params.lang}
+      className="h-full scroll-smooth bg-white antialiased"
+    >
+      <body className="mx-auto max-w-7xl p-4 sm:p-6 lg:p-8">
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }
