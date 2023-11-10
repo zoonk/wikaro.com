@@ -1,9 +1,23 @@
 import { Locale } from "@/types";
+import type { Metadata, Viewport } from "next";
+import colors from "tailwindcss/colors";
+
 import "../globals.css";
 
 type RootLayoutProps = {
   children: React.ReactNode;
   params: Locale;
+};
+
+export const viewport: Viewport = {
+  themeColor: colors.indigo[600],
+  colorScheme: "light",
+};
+
+export const metadata: Metadata = {
+  manifest: "/site.webmanifest",
+  category: "education",
+  metadataBase: new URL("https://wikaro.com"),
 };
 
 export async function generateStaticParams(): Promise<Locale[]> {
@@ -13,12 +27,6 @@ export async function generateStaticParams(): Promise<Locale[]> {
 export default function RootLayout({ children, params }: RootLayoutProps) {
   return (
     <html lang={params.lang}>
-      <head>
-        <link rel="manifest" href="/site.webmanifest" />
-        <meta name="msapplication-TileColor" content="#4F46E5" />
-        <meta name="theme-color" content="#4F46E5" />
-      </head>
-
       <body>{children}</body>
     </html>
   );

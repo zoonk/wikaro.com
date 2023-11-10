@@ -1,5 +1,15 @@
 {
   "home": {
     "title": "Título de teste"
+  },
+  "metadata": {
+    "home": {
+      "title": "Wikaro: Cursos interativos para empresas",
+      "description": "Wikaro é uma plataforma de cursos interativos para empresas. É uma alternativa white-label para cursos como o Duolingo para capacitar funcionários e ganhar clientes."
+    },
+    "twitter": {
+      "title": "Wikaro",
+      "description": "Solução white-label para cursos tipo o Duolingo, mas voltado para o seu negócio. Crie cursos interativos para funcionários e clientes."
+    }
   }
 }

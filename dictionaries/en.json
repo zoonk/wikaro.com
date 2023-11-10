@@ -1,5 +1,15 @@
 {
   "home": {
     "title": "Test title"
+  },
+  "metadata": {
+    "home": {
+      "title": "Wikaro: Interactive courses for your business",
+      "description": "Wikaro is a platform for creating interactive courses for your business. It's a white-label Duolingo alternative for training your employees and attract new customers.",
+      "twitter": {
+        "title": "Wikaro",
+        "description": "White-label Duolingo alternative for your business. Create interactive courses for your employees and customers."
+      }
+    }
   }
 }
