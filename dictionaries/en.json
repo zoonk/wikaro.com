@@ -2,6 +2,9 @@
   "header": {
     "demo": "Live demo"
   },
+  "footer": {
+    "powered_by": "Created with ❤️ by"
+  },
   "home": {
     "hero": {
       "featured": "Interactive learning",

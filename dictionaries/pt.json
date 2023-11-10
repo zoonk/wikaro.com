@@ -2,6 +2,9 @@
   "header": {
     "demo": "Demonstração"
   },
+  "footer": {
+    "powered_by": "Criado com ❤️ por"
+  },
   "home": {
     "hero": {
       "featured": "Aprendizagem interativa",
