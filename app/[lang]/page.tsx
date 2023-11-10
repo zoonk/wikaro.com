@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import WaitingList from "@/components/WaitingList";
 import { getDictionary } from "@/dictionaries";
 import type { LanguageParams } from "@/types";
 import type { Metadata } from "next";
@@ -27,6 +28,7 @@ export default async function Home({ params }: HomeProps) {
   return (
     <main>
       <Hero locale={params.lang} />
+      <WaitingList locale={params.lang} />
     </main>
   );
 }

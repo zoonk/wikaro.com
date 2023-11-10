@@ -9,6 +9,13 @@
       "subtitle": "Create interactive guides to engage your employees and attract new customers. It’s easier, faster and cheaper than making video lessons."
     }
   },
+  "waiting": {
+    "title": "Get notified when we're launching.",
+    "subtitle": "Join the waiting list and get 50% off the first year. We won’t spam you. We’ll use your email address only to notify you when we’re launching.",
+    "email": "Email address",
+    "email_placeholder": "Enter your email",
+    "action": "Notify me"
+  },
   "metadata": {
     "home": {
       "title": "Wikaro: Interactive courses for your business",
