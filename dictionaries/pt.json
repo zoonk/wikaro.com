@@ -14,7 +14,9 @@
     "subtitle": "Entre na lista de espera e ganhe 50% de desconto no primeiro ano. Não enviaremos spam. Usaremos seu endereço de email apenas para avisá-lo quando o Wikaro estiver no ar.",
     "email": "Endereço de email",
     "email_placeholder": "Digite seu email",
-    "action": "Avisar"
+    "action": "Avisar",
+    "success": "Obrigado! Você receberá um email quando o Wikaro estiver no ar.",
+    "errpr": "Ocorreu um erro. Por favor, tente novamente."
   },
   "metadata": {
     "home": {

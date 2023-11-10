@@ -14,7 +14,9 @@
     "subtitle": "Join the waiting list and get 50% off the first year. We won’t spam you. We’ll use your email address only to notify you when we’re launching.",
     "email": "Email address",
     "email_placeholder": "Enter your email",
-    "action": "Notify me"
+    "action": "Notify me",
+    "success": "Thank you! We'll notify you when we're launching.",
+    "error": "Something went wrong. Please try again later."
   },
   "metadata": {
     "home": {

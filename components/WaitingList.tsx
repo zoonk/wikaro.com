@@ -6,6 +6,7 @@
 
 import { getDictionary } from "@/dictionaries";
 import { Locale } from "@/types";
+import WaitingListForm from "./WaitingListForm";
 
 interface WaitingListProps {
   locale: Locale;
@@ -24,28 +25,7 @@ export default async function WaitingList({ locale }: WaitingListProps) {
         {t.waiting.subtitle}
       </p>
 
-      <form className="mx-auto mt-10 flex max-w-md gap-x-4">
-        <label htmlFor="email-address" className="sr-only">
-          {t.waiting.email}
-        </label>
-
-        <input
-          id="email-address"
-          name="email"
-          type="email"
-          autoComplete="email"
-          required
-          className="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
-          placeholder={t.waiting.email_placeholder}
-        />
-
-        <button
-          type="submit"
-          className="flex-none rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
-        >
-          {t.waiting.action}
-        </button>
-      </form>
+      <WaitingListForm t={t.waiting} />
 
       <svg
         viewBox="0 0 1024 1024"
