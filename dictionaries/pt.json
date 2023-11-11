@@ -3,7 +3,9 @@
     "demo": "Demonstração"
   },
   "footer": {
-    "powered_by": "Criado com ❤️ por"
+    "powered_by": "Criado com ❤️ por",
+    "privacy": "Privacidade",
+    "terms": "Termos"
   },
   "home": {
     "hero": {
