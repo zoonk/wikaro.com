@@ -16,6 +16,10 @@ export async function generateMetadata({
   return {
     title: t.metadata.home.title,
     description: t.metadata.home.description,
+    alternates: {
+      canonical: "/en",
+      languages: { en: "/en", pt: "/pt" },
+    },
     twitter: {
       title: t.metadata.home.twitter.title,
       description: t.metadata.home.twitter.description,
