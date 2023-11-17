@@ -32,5 +32,13 @@
         "description": "Solução white-label para cursos tipo o Duolingo, mas voltado para o seu negócio. Crie cursos interativos para funcionários e clientes."
       }
     }
+  },
+  "social": {
+    "github": "https://github.com/zoonk",
+    "x": "https://x.com/zoonkbrasil",
+    "linkedin": "https://linkedin.com/company/zoonk",
+    "instagram": "https://instagram.com/zoonkbr",
+    "threads": "https://www.threads.net/@zoonkbr",
+    "facebook": "https://facebook.com/zoonkbrasil"
   }
 }
